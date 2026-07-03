@@ -1,5 +1,11 @@
 # 📚 Deque
 
+`std::deque` (Double-Ended Queue) is a sequence container provided by the C++ Standard Template Library (STL) that allows **fast insertion and deletion at both the front and the back**.
+
+Unlike `std::vector`, which is optimized for operations at the end, and `std::list`, which sacrifices random access for insertion efficiency, `std::deque` provides a balanced approach by supporting efficient access and modifications from both ends.
+
+---
+
 ## 📖 Prerequisites
 
 Before studying this topic, you should be familiar with:
@@ -8,10 +14,6 @@ Before studying this topic, you should be familiar with:
 - Loops and functions
 - STL iterators
 - std::vector (recommended)
-
-`std::deque` (Double-Ended Queue) is a sequence container provided by the C++ Standard Template Library (STL) that allows **fast insertion and deletion at both the front and the back**.
-
-Unlike `std::vector`, which is optimized for operations at the end, and `std::list`, which sacrifices random access for insertion efficiency, `std::deque` provides a balanced approach by supporting efficient access and modifications from both ends.
 
 ---
 
