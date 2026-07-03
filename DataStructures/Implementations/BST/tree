@@ -1,0 +1,57 @@
+#include<iostream>
+using namespace std;
+
+// Node Class
+template<typename T>
+class Node {
+public:
+    T data;
+    Node<T>* left;
+    Node<T>* right;
+    Node(T data): data(data), left(nullptr),right(nullptr) {}
+};
+
+// tree Class
+template<typename T>
+class tree {
+    Node<T>* root;
+public:
+    tree():root(nullptr){}
+    Node<T>* getRoot()const { return root; }
+    void insertNode(T data) {
+        Node<T>* newNode=new Node<T>(data);
+        if(!root) { root=newNode; return; }
+        Node<T>* temp=root;
+        while(true) {
+            if(data<temp->data) {
+                if(temp->left) temp=temp->left;
+                else { temp->left=newNode; return; }
+            } else if(data>temp->data) {
+                if(temp->right) temp=temp->right;
+                else { temp->right=newNode; return; }
+            }
+            else { delete newNode; return; }
+        }
+    }
+    void deleteNode(T data) {
+        
+    }
+    void preOrder(Node<T>* root) {
+        if(root==nullptr) return;
+        cout<<root->data<<" ";
+        preOrder(root->left);
+        preOrder(root->right);
+    }
+    void inOrder(Node<T>* root) {
+        if(root==nullptr) return;
+        inOrder(root->left);
+        cout<<root->data<<" ";
+        inOrder(root->right);
+    }
+    void postOrder(Node<T>* root) {
+        if(root==nullptr) return;
+        postOrder(root->left);
+        postOrder(root->right);
+        cout<<root->data<<" ";
+    }
+};
