@@ -1,11 +1,9 @@
 #include<iostream>
 using namespace std;
 // Euclidean Class
-class Solution
-{
+class Euclidean {
 public:
-    int gcd(int a,int b)
-    {
+    int gcd(int a,int b) {
         // Negative entry check
         if(a<0) a*=(-1);
         if(b<0) b*=(-1);
@@ -23,12 +21,11 @@ public:
     }
 };
 // Main Function
-int main()
-{
-    Solution euclidean;
+int main() {
+    Euclidean obj;
     int a,b;
     cout<<"Enter a : "; cin>>a;
     cout<<"Enter b : "; cin>>b;
-    cout<<"GCD of "<<a<<" and "<<b<<" : "<<euclidean.gcd(a,b);
+    cout<<"GCD of "<<a<<" and "<<b<<" : "<<obj.gcd(a,b);
     return 0;
 }
