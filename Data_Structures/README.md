@@ -53,20 +53,20 @@ Each folder contains implementations and explanations for a specific data struct
 # 🧠 Choosing the Right Data Structure
 
 ```text id="q4t7wb"
-                                       Need to Store Data?
-                                               │
-                                               ▼
-                                          Sequential?
-                            ┌──────────────────┴───────────────────┐
-                           Yes                                     No
-                            │                                      │
-                            ▼                                      ▼
-                      Random Access?                         Relationship?
-                     ┌──────┴──────┐                        ┌──────┴──────┐
-                    Yes            No                  Hierarchical    Network
-                     │             │                        │             │
-                     ▼             ▼                        ▼             ▼
-                Array/Vector   Linked List                Tree          Graph
+                              Need to Store Data?
+                                      │
+                                      ▼
+                                 Sequential?
+                   ┌──────────────────┴───────────────────┐
+                  Yes                                     No
+                   │                                      │
+                   ▼                                      ▼
+             Random Access?                         Relationship?
+            ┌──────┴──────┐                        ┌──────┴──────┐
+           Yes            No                  Hierarchical    Network
+            │             │                        │             │
+            ▼             ▼                        ▼             ▼
+       Array/Vector   Linked List                Tree          Graph
 ```
 
 Other specialized choices include:
