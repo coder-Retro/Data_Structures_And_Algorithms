@@ -1,29 +1,29 @@
 #include<iostream>
+#include<string>
 using namespace std;
-class Solution
-{
+
+/*
+Approach: Brute Force
+TC: O((a-b) * b)
+SC: O(1)
+*/
+
+class Solution {
 public:
-    int strStr(string haystack,string needle)
-    {
+    int strStr(string haystack,string needle) {
         int a=haystack.length();
         int b=needle.length();
-        for(int i=0;i<=a-b;i++)
-        {
-            if(haystack[i]==needle[0])
-            {
+        for(int i=0;i<=a-b;i++) {
+            if(haystack[i]==needle[0]) {
                 int j=0;
-                while(j<b && haystack[i+j]==needle[j])
-                {
-                    j++;
-                }
+                while(j<b && haystack[i+j]==needle[j]) j++;
                 if(j==b) return i;
             }
         }
         return -1;
     }
 };
-int main()
-{
+int main() {
     Solution s;
     cout<<s.strStr("sadbutsad","sad");
     return 0;

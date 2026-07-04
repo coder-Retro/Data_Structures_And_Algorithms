@@ -1,15 +1,22 @@
 #include<iostream>
 #include<vector>
 using namespace std;
-class Solution
-{
+#include<iostream>
+#include<vector>
+using namespace std;
+
+/*
+Approach: Brute Force
+TC: O(n²)
+SC: O(1)
+*/
+
+class Solution {
 public:
-    int removeElement(vector<int>& nums,int val)
-    {
-        for(int i=0;i<nums.size();i++)
-        {
-            if(nums[i]==val)
-            {
+    int removeElement(vector<int>& nums,int val) {
+        if (nums.empty()) return 0;
+        for(int i=0;i<nums.size();i++) {
+            if(nums[i]==val) {
                 for(int j=i;j<nums.size()-1;j++)
                     nums[j]=nums[j+1];
                 i--;
@@ -19,8 +26,7 @@ public:
         return nums.size();
     }
 };
-int main()
-{
+int main() {
     Solution s;
     vector<int> nums={0,1,2,2,3,0,4,2};
     int val=2;

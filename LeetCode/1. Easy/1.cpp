@@ -2,19 +2,22 @@
 #include<vector>
 #include<unordered_map>
 using namespace std;
-class Solution
-{
+
+/*
+Approach: Hashing
+TC: O(n)
+SC: O(n)
+*/
+
+class Solution {
 public:
-    vector<int> twoSum(vector<int>& nums,int target)
-    {
+    vector<int> twoSum(vector<int>& nums,int target) {
         vector<int> r;
         unordered_map<int,int> m;
         unordered_map<int,int>::iterator it;
-        for(int i=0;i<nums.size();i++)
-        {
+        for(int i=0;i<nums.size();i++) {
             it=m.find(target-nums[i]);
-            if(it!=m.end())
-            {
+            if(it!=m.end()) {
                 r.push_back(it->second);
                 r.push_back(i);
                 break;
@@ -24,13 +27,11 @@ public:
         return r;
     }
 };
-int main()
-{
+int main() {
     Solution s;
     vector<int> nums={2,7,11,15};
     int target=9;
     vector<int> result=s.twoSum(nums,target);
-    for(int i:result)
-        cout<<i<<" ";
+    for(int i:result) cout<<i<<" ";
     return 0;
 }

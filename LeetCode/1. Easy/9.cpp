@@ -1,14 +1,18 @@
 #include<iostream>
 using namespace std;
-class Solution
-{
+
+/*
+Approach: Arithmatic Reversal
+TC: O(d), d = digits of num
+SC: O(1)
+*/
+
+class Solution {
 public:
-    bool isPalindrome(int num)
-    {
+    bool isPalindrome(int num) {
         long long reversed=0;
         int copy=num;
-        while(copy>0)
-        {
+        while(copy>0) {
             reversed=reversed*10+copy%10;
             copy/=10;
         }
@@ -16,8 +20,7 @@ public:
         return false;
     }
 };
-int main()
-{
+int main() {
     Solution s;
     (s.isPalindrome(121))?cout<<"true":cout<<"false";
     return 0;

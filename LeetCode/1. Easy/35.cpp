@@ -1,22 +1,36 @@
 #include<iostream>
 #include<vector>
 using namespace std;
-class Solution
-{
+
+/*
+Approach: Binary Search
+TC: O(log n)
+SC: O(1)
+*/
+
+class Solution {
 public:
-    int searchInsert(vector<int>& nums,int target)
-    {
-        for(int i=0;i<nums.size();i++)
-            if(nums[i]==target||nums[i]>target)
-                return i;
-        return nums.size();
+    int searchInsert(vector<int>& nums, int target) {
+        int low=0;
+        int high=nums.size()-1; 
+        while (low<=high) {
+            int mid=low+(high-low)/2;
+            
+            if (nums[mid]==target) {
+                return mid; // Target found
+            } else if (nums[mid]<target) {
+                low=mid+1; // Target is in the right half
+            } else {
+                high=mid-1; // Target is in the left half
+            }
+        }
+        return low;
     }
 };
-int main()
-{
+int main() {
     Solution s;
     vector<int> nums={1,3,5,6};
     int target=5;
-    cout<<s.searchInsert(nums,target);
+    cout<<s.searchInsert(nums, target);
     return 0;
 }
