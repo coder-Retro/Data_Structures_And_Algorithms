@@ -49,11 +49,6 @@ Implementation and practice of fundamental data structures including:
 * Stacks
 * Queues
 * Trees
-* Binary Search Trees
-* Heaps
-* Graphs
-* Hash Tables
-* Tries
 
 ---
 
@@ -63,14 +58,15 @@ A collection of interview-focused problem-solving patterns.
 
 Examples include:
 
-* Sliding Window
-* Two Pointers
-* Fast & Slow Pointers
 * Prefix Sum
-* Binary Search Pattern
-* Dynamic Programming
-* Backtracking
+* Two Pointers
+* Slow & Fast Pointers
+* Sliding Window
+* Binary Search
 * Recursion
+* Greedy
+* Backtracking
+* Dynamic Programming
 
 Understanding these patterns helps solve hundreds of interview questions efficiently.
 
@@ -83,17 +79,11 @@ Examples and explanations of the C++ Standard Template Library.
 Topics include:
 
 * Vector
-* Pair
-* Array
 * List
-* Deque
 * Stack
 * Queue
+* Deque
 * Priority Queue
-* Set
-* Map
-* Unordered Containers
-* Algorithms Library
 
 ---
 
@@ -113,9 +103,7 @@ Dedicated examples covering C++ pointer concepts including:
 
 ## 💻 LeetCode
 
-Solutions to LeetCode problems organized for revision and interview preparation.
-
-Where applicable, multiple approaches are included to demonstrate different optimization strategies.
+Solutions to LeetCode problems organized for revision and interview preparation. Organized by first the difficulty and then the problem ID on Leetcode.
 
 ---
 
@@ -179,7 +167,6 @@ If you discover a bug or have a better implementation, feel free to open an issu
 
 # 📌 Future Improvements
 
-* Add README files for every directory
 * Add visual diagrams
 * Include complexity tables
 * Add practice recommendations
