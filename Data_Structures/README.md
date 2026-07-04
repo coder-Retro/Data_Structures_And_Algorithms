@@ -80,7 +80,7 @@ Other specialized choices include:
 
 # 📚 Topics Covered
 
-## 📦 Arrays
+## 📦 Arrays/Vectors
 
 The simplest and most commonly used data structure.
 
@@ -104,7 +104,7 @@ Best for:
 
 ---
 
-## 🌳 Trees
+## 🌳 Binary Trees
 
 Organize data hierarchically.
 
@@ -114,44 +114,6 @@ Common applications:
 * Databases
 * Expression trees
 * Search trees
-
----
-
-## 🕸️ Graphs
-
-Represent relationships between connected entities.
-
-Common applications:
-
-* Social networks
-* Maps
-* Routing algorithms
-* Recommendation systems
-
----
-
-## ⛰️ Heaps
-
-A specialized tree structure used for priority-based operations.
-
-Common applications:
-
-* Priority Queues
-* Scheduling
-* Shortest Path Algorithms
-
----
-
-## 🗝️ Hashing
-
-Maps keys directly to values using hash functions.
-
-Common applications:
-
-* Dictionaries
-* Caching
-* Symbol tables
-* Database indexing
 
 ---
 
