@@ -58,7 +58,7 @@ A collection of interview-focused problem-solving patterns.
 
 Examples include:
 
-* Prefix Sum
+* PrefixSum And SuffixSum
 * Two Pointers
 * Slow & Fast Pointers
 * Sliding Window
