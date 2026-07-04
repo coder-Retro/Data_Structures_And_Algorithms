@@ -37,12 +37,12 @@ After completing this section, you should be able to:
 
 ```text id="dsk2m9"
 Data_Structures/
-├── Array/
+├── Vctor/
 ├── LinkedList/
-├── Tree/
-├── Graph/
-├── Heap/
-├── Hashing/
+├── Stack/
+├── Queue/
+├── Deque/
+├── BinaryTree/
 └── README.md
 ```
 
@@ -53,22 +53,28 @@ Each folder contains implementations and explanations for a specific data struct
 # 🧠 Choosing the Right Data Structure
 
 ```text id="q4t7wb"
-Need to Store Data?
-         │
-         ▼
-Sequential?
- │               │
-Yes             No
- │               │
- ▼               ▼
-Array       Relationships?
-                 │
-          ┌──────┴──────┐
-          ▼             ▼
-      Hierarchical    Network
-          │             │
-          ▼             ▼
-         Tree         Graph
+                                Need to Store Data?
+                                        │
+                                        ▼
+                                    Sequential?
+                     ┌──────────────────┴───────────────────┐
+                    Yes                                     No
+                     │                                      │
+                     ▼                                      ▼
+               Random Access?                         Relationship?
+              ┌──────┴──────┐                        ┌──────┴──────┐
+             Yes            No                  Hierarchical    Network
+              │             │                        │             │
+              ▼             ▼                        ▼             ▼
+         Array/Vector   Linked List                Tree          Graph
+              │
+              ▼
+          Protocol?
+      ┌──────┴──────┐
+     LIFO          FIFO
+      │             │
+      ▼             ▼
+    Stack         Queue
 ```
 
 Other specialized choices include:
