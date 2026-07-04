@@ -56,7 +56,7 @@ Each folder contains implementations and explanations for a specific data struct
                                 Need to Store Data?
                                         │
                                         ▼
-                                    Sequential?
+                                   Sequential?
                      ┌──────────────────┴───────────────────┐
                     Yes                                     No
                      │                                      │
@@ -70,11 +70,11 @@ Each folder contains implementations and explanations for a specific data struct
               │
               ▼
           Protocol?
-      ┌──────┴──────┐
-     LIFO          FIFO
-      │             │
-      ▼             ▼
-    Stack         Queue
+       ┌──────┴──────┐
+      LIFO          FIFO
+       │             │
+       ▼             ▼
+     Stack         Queue
 ```
 
 Other specialized choices include:
