@@ -67,15 +67,6 @@ Each folder contains implementations and explanations for a specific data struct
                      │             │                        │             │
                      ▼             ▼                        ▼             ▼
                 Array/Vector   Linked List                Tree          Graph
-                     │
-                     ▼
-                 Protocol?
-        ┌────────────┴────────────┐
- Last in First out        First in First out
-      (LIFO)                    (FIFO)
-        │                         │
-        ▼                         ▼
-      Stack                     Queue
 ```
 
 Other specialized choices include:
