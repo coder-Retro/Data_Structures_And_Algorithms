@@ -1,19 +1,23 @@
 #include<iostream>
 #include<vector>
 using namespace std;
+
+/*
+Approach: Bit Manipulation
+TC: O(n)
+SC: O(1)
+*/
+
 class Solution{
     public:
-        int singleNumber(vector<int>&nums)
-        {
+        int singleNumber(vector<int>&nums) {
             // bitwise XOR cancellation
             int answer=0;
-            for(int i:nums)
-                answer^=i;
+            for(int i:nums) answer^=i;
             return answer;
         }
 };
-int main()
-{
+int main() {
     Solution s;
     vector<int> nums={1,1,7,3,3,4,4};
     cout<<"Single Number : "<<s.singleNumber(nums);

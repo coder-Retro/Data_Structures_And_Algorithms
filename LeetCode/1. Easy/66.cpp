@@ -1,6 +1,13 @@
 #include<iostream>
 #include<vector>
 using namespace std;
+
+/*
+Approach: Linear Addition
+TC: O(n)
+SC: O(1)
+*/
+
 class Solution {
 public:
     vector<int> plusOne(vector<int>& digits) {

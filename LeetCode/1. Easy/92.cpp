@@ -7,6 +7,13 @@ struct ListNode {
     ListNode(int x) : val(x), next(nullptr) {}
     ListNode(int x, ListNode *next) : val(x), next(next) {}
 };
+
+/*
+Approach: In-Place Sublist-Reversal (Three Pointers)
+TC: O(n)
+SC: O(1)
+*/
+
 class Solution {
 public:
     ListNode* reverseBetween(ListNode* head,int left,int right) {

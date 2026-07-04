@@ -1,13 +1,18 @@
 #include<iostream>
 using namespace std;
-class Solution
-{
+
+/*
+Approach: Two Pointer
+TC: O(n)
+SC: O(1)
+*/
+
+class Solution {
 public:
     bool isPalindrome(string s) {
         int i=0;
         int j=s.length()-1;
-        while(i<j)
-        {
+        while(i<j) {
             while(i<j && !isalnum(s[i])) i++;
             while(i<j && !isalnum(s[j])) j--;
             if(tolower(s[i])!=tolower(s[j])) return false;
@@ -16,10 +21,9 @@ public:
         return true;
     }
 };
-int main()
-{
+int main() {
     Solution s;
     string str="A man, a plan, a canal: Panama";
-    cout<<(s.isPalindrome(str))?"True":"False";
+    cout<<(s.isPalindrome(str)?"True":"False");
     return 0;
 }
