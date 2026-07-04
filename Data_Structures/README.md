@@ -53,28 +53,29 @@ Each folder contains implementations and explanations for a specific data struct
 # 🧠 Choosing the Right Data Structure
 
 ```text id="q4t7wb"
-                                Need to Store Data?
-                                        │
-                                        ▼
-                                   Sequential?
-                     ┌──────────────────┴───────────────────┐
-                    Yes                                     No
-                     │                                      │
-                     ▼                                      ▼
-               Random Access?                         Relationship?
-              ┌──────┴──────┐                        ┌──────┴──────┐
-             Yes            No                  Hierarchical    Network
-              │             │                        │             │
-              ▼             ▼                        ▼             ▼
-         Array/Vector   Linked List                Tree          Graph
-              │
-              ▼
-          Protocol?
-       ┌──────┴──────┐
-      LIFO          FIFO
-       │             │
-       ▼             ▼
-     Stack         Queue
+                                       Need to Store Data?
+                                               │
+                                               ▼
+                                          Sequential?
+                            ┌──────────────────┴───────────────────┐
+                           Yes                                     No
+                            │                                      │
+                            ▼                                      ▼
+                      Random Access?                         Relationship?
+                     ┌──────┴──────┐                        ┌──────┴──────┐
+                    Yes            No                  Hierarchical    Network
+                     │             │                        │             │
+                     ▼             ▼                        ▼             ▼
+                Array/Vector   Linked List                Tree          Graph
+                     │
+                     ▼
+                 Protocol?
+        ┌────────────┴────────────┐
+ Last in First out        First in First out
+      (LIFO)                    (FIFO)
+        │                         │
+        ▼                         ▼
+      Stack                     Queue
 ```
 
 Other specialized choices include:
