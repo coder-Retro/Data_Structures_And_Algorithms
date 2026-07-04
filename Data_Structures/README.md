@@ -37,12 +37,13 @@ After completing this section, you should be able to:
 
 ```text id="dsk2m9"
 Data_Structures/
-├── Vctor/
-├── LinkedList/
-├── Stack/
-├── Queue/
-├── Deque/
-├── BinaryTree/
+├── Implementations/
+│   ├── Vector/
+│   ├── LinkedList/
+│   ├── Stack/
+│   ├── Queue/
+│   ├── Deque/
+│   └── BinaryTree/
 └── README.md
 ```
 
