@@ -1,6 +1,25 @@
 #include<iostream>
 #include<vector>
 using namespace std;
+
+/*
+Use Case:
+Linear search algorithm is used to find a value
+in an unsorted dataset in linear time. It works
+by iterating through the dataset from the start
+and traversing till the end until the target is
+found. If target is found then it's returned to
+the call but if dataset ends and target is still
+not found, then -1 is returned as a sign of the
+absence of target element.
+*/
+
+/*
+Approach: Linear Search
+TC: O(n)
+SC: O(1)
+*/
+
 class Solution {
 public:
     int linearSearch(vector<int>& nums,int target) {

@@ -10,7 +10,6 @@ Every solution/algorithm file follows this order, top to bottom:
 
 ```cpp
 #include<iostream>
-#include<vector>
 using namespace std;
 
 /*
