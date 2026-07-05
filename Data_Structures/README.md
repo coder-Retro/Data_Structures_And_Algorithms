@@ -1,3 +1,5 @@
+<img src="https://capsule-render.vercel.app/api?type=venom&height=200&color=gradient&text=Data%20Structures&fontSize=60&fontColor=FFFFFF&animation=fadeIn&fontAlignY=35&desc=Implementation&descSize=35&descColor=FFFFFF&descAlignY=65" width="100%"/>
+
 # 🏗️ Data Structures
 
 > **"A data structure is a way of organizing data so that it can be accessed, modified, and processed efficiently."**
