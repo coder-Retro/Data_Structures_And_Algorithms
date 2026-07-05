@@ -7,45 +7,44 @@ struct ListNode {
     ListNode(int x) : val(x), next(nullptr) {}
     ListNode(int x, ListNode *next) : val(x), next(next) {}
 };
-ListNode* makeList(initializer_list<int> lis)
-{
+ListNode* makeList(initializer_list<int> lis) {
     ListNode l;
     ListNode* temp=&l;
-    for(int i:lis)
-    {
+    for(int i:lis) {
         temp->next=new ListNode(i);
         temp=temp->next;
     }
     return l.next;
 }
-void printList(ListNode* l)
-{
-    while(l)
-    {
+void printList(ListNode* l) {
+    while(l) {
         cout<<l->val<<" ";
         l=l->next;
     }
 }
-class Solution
-{
+
+/*
+Approach: Three Pointer / Linear Pass
+TC: O(n)
+SC: O(1)
+*/
+
+class Solution {
 public:
     ListNode* reverseList(ListNode* head) {
         if(!head || !head->next) return head;
         ListNode* prev=nullptr;
         ListNode* curr=head;
-        ListNode* next=head->next;
-        while(next) {
+        while(curr) {
+            ListNode* next=curr->next;
             curr->next=prev;
             prev=curr;
             curr=next;
-            next=next->next;
         }
-        curr->next=prev;
-        return curr;
+        return prev;
     }
 };
-int main()
-{
+int main() {
     Solution s;
     ListNode* l1=makeList({1,2,3,4,5});
     printList(l1);

@@ -1,0 +1,38 @@
+#include<iostream>
+using namespace std;
+
+/*
+Use Case:
+BrianKernighan's Algorithm is used when we want
+to count the number of set bits in an unsigned
+32 bit number. It works by subtracting 1 from
+the number (if the number isn't 0), then &s the
+number-1 with number itself to remove that one
+bit and then it increases the count variable. It
+run the exact amount of times as the number of
+one bits in the number.
+*/
+
+/*
+Approach: Brian Kernighan’s Algo / Bit Manipulation
+TC: O(1)
+SC: O(1)
+*/
+
+class BrianKernighan {
+public:
+    int hammingWeight(int n) {
+        int count=0;
+        while(n) {
+            n&=(n-1);
+            count++;
+        }
+        return count;
+    }
+};
+int main() {
+    BrianKernighan obj;
+    int n=11;
+    cout<<obj.hammingWeight(n);
+    return 0;
+}

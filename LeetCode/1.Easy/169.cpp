@@ -1,15 +1,19 @@
 #include<iostream>
 #include<vector>
 using namespace std;
-class Solution
-{
+
+/*
+Approach: Boyer Moore Algo
+TC: O(n)
+SC: O(1)
+*/
+
+class Solution {
 public:
-    int majorityElement(vector<int>& nums)
-    {
+    int majorityElement(vector<int>& nums) {
         // moore's algorithm
         int freq=0,ans;
-        for(int i=0;i<nums.size();i++)
-        {
+        for(int i=0;i<nums.size();i++) {
             if(freq==0) ans=nums[i];
             if(ans==nums[i]) freq++;
             else freq--;
@@ -17,8 +21,7 @@ public:
         return ans;
     }
 };
-int main()
-{
+int main() {
     Solution s;
     vector<int> nums={1,2,2,1,1};
     cout<<s.majorityElement(nums);

@@ -1,5 +1,4 @@
-struct TreeNode
-{
+struct TreeNode {
     int val;
     TreeNode *left;
     TreeNode *right;
@@ -7,19 +6,17 @@ struct TreeNode
     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
 };
+
+/*
+Approach: Recursion / DFS
+TC: O(n)
+SC: O(h), h = height of tree
+*/
+
 class Solution {
-    void countNodes(TreeNode* root,int& n)
-    {
-        if(root==nullptr) return;
-        n++;
-        countNodes(root->left,n);
-        countNodes(root->right,n);
-    }
 public:
     int countNodes(TreeNode* root) {
         if(!root) return 0;
-        int totalNodes=0;
-        countNodes(root,totalNodes);
-        return totalNodes;
+        return 1+countNodes(root->left)+countNodes(root->right);
     }
 };

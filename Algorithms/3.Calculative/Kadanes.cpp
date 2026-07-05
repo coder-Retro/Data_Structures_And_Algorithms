@@ -1,12 +1,31 @@
 #include<iostream>
 #include<vector>
+#include<climits>
 using namespace std;
-// Kadanes Class
-class Kadanes {
+
+/*
+Use Case:
+Kadene's algorithm is used to find the max
+Sub array sum in an array. It works by the
+successive addition until sum falls below
+0, then it resets sum to 0. It compares the
+value of sum to maxSum detected till now and
+constantly updates it if sum gets larger
+than maxSum.
+*/
+
+/*
+Approach: Kadane's Algo / Linear Pass
+TC: O(n)
+SC: O(1)
+*/
+
+// Kadane Class
+class Kadane {
 public:
     int maxSubArraySum(vector<int>& nums) {
         int curr=0;
-        int maxSum=0;
+        int maxSum=INT_MIN;
         for(int i:nums) {
             curr+=i;
             maxSum=max(maxSum,curr);
@@ -17,12 +36,8 @@ public:
 };
 // Main Function
 int main() {
-    Kadanes obj;
-    int s;
-    cout<<"Enter Size of array : "; cin>>s;
-    vector<int> nums(s);
-    cout<<"Enter Elements : ";
-    for(int i=0;i<s;i++) cin>>nums[i];
-    cout<<"Max Sum Array Sum : "<<obj.maxSubArraySum(nums); 
+    Kadane obj;
+    vector<int> nums={1,-2,3,4,5,-6,7,-10};
+    cout<<obj.maxSubArraySum(nums); 
     return 0;
 }
