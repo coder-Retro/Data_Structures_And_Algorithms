@@ -1,3 +1,5 @@
+<img src="https://capsule-render.vercel.app/api?type=venom&height=200&color=gradient&text=Patterns&fontSize=60&fontColor=FFFFFF&animation=fadeIn&fontAlignY=35&desc=Time%20Complexity%20%7C%20Space%20Complexity&descSize=30&descColor=FFFFFF&descAlignY=65" width="100%"/>
+
 # 🧩 Problem Solving Patterns
 
 > **"Don't memorize solutions. Recognize patterns."**
