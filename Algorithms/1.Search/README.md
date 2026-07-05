@@ -1,3 +1,5 @@
+<img src="https://capsule-render.vercel.app/api?type=venom&height=200&color=gradient&text=Search&fontSize=60&fontColor=FFFFFF&animation=fadeIn&fontAlignY=35&desc=Linear%20%7C%20Binary&descSize=35&descColor=FFFFFF&descAlignY=65" width="100%"/>
+
 # 🔍 Search Algorithms
 
 > **"Searching is the process of locating a specific element within a collection of data."**
