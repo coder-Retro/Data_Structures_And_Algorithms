@@ -1,18 +1,20 @@
 #include<iostream>
 using namespace std;
-class Solution
-{
+
+/*
+Approach: Constant Divisibility
+TC: O(log n)
+SC: O(1)
+*/
+
+class Solution {
 public:
-    bool isPowerOfThree(int n)
-    {
-        long pow=1;
-        while(pow*3<=n) pow*=3;
-        if(pow==n) return true;
-        return false;
+    bool isPowerOfThree(int n) {
+        // 1162261467 is 3^19 max-int in power of 3
+        return (n>0) && !(1162261467 % n);
     }
 };
-int main()
-{
+int main() {
     Solution s;
     int n=1;
     (s.isPowerOfThree(n))?cout<<"true":cout<<"false";

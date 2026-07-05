@@ -1,6 +1,13 @@
 #include<iostream>
 #include<vector>
 using namespace std;
+
+/*
+Approach: Two Pointer
+TC: O(n)
+SC: O(n)
+*/
+
 class Solution {
 public:
     vector<int> concatWithReverse(vector<int>& nums) {

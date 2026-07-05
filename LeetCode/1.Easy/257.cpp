@@ -6,6 +6,13 @@ struct TreeNode {
     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
 };
+
+/*
+Appriach: Recursion / DFS
+TC: O(n²)
+SC: O(h²), h = height of tree
+*/
+
 class Solution {
     void pathReader(TreeNode* root,vector<string>& paths,string path) {
         if(!root) return;

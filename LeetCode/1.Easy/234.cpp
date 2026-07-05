@@ -8,6 +8,13 @@ struct ListNode {
     ListNode(int x) : val(x), next(nullptr) {}
     ListNode(int x, ListNode *next) : val(x), next(next) {}
 };
+
+/*
+Approach: Slow & Fast Pointers / In-Place Reversal / Two Pointers
+TC: O(n)
+SC: O(1)
+*/
+
 class Solution {
 public:
     bool isPalindrome(ListNode* head) {

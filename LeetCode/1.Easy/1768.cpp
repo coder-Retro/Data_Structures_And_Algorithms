@@ -1,6 +1,13 @@
 #include<iostream>
 #include<string>
 using namespace std;
+
+/*
+Approach: Two Pointer
+TC: O(n)
+SC: O(1)
+*/
+
 class Solution  {
 public:
     string mergeAlternately(string s1,string s2) {

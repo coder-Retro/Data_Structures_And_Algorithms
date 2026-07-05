@@ -1,6 +1,13 @@
 #include<iostream>
 #include<string>
 using namespace std;
+
+/*
+Approach: Hashing
+TC: O(n)
+SC: O(1)
+*/
+
 class Solution {
 public:
     int maxNumberOfBalloons(string s) {

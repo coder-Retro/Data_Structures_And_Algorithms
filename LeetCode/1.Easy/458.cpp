@@ -1,21 +1,25 @@
 #include<iostream>
 #include<vector>
 using namespace std;
+
+/*
+Approach: Iterative Accumulation / Linear Pass
+TC: O(n)
+SC: O(1)
+*/
+
 class Solution {
 public:
     int findMaxConsecutiveOnes(vector<int>& nums) {
-        int max=0;
+        int maxOne=0;
         int curr=0;
-        for(int i=0;i<nums.size();i++)
-        {
-            if(nums[i]==1)
+        for(int i:nums)
+            if(i==1) {
                 curr++;
-            else
-                curr=0;
-            if(curr>max)
-                max=curr;
-        }
-        return max;
+                maxOne=max(maxOne,curr);
+            }
+            else curr=0;
+        return maxOne;
     }
 };
 int main() {

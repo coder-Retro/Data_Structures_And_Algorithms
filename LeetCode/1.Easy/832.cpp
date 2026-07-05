@@ -2,6 +2,13 @@
 #include<vector>
 #include<utility>
 using namespace std;
+
+/*
+Approach: In-Place Reversal / Bit Manipulation
+TC: O(n)
+SC: O(1)
+*/
+
 class Solution {
 public:
     vector<vector<int>> flipAndInvertImage(vector<vector<int>>& image) {
@@ -9,8 +16,8 @@ public:
             for(int j=0,k=image[i].size()-1;j<=k;j++,k--) {
                 swap(image[i][j],image[i][k]);
                 if(j!=k)
-                    image[i][j]=!(image[i][j]);
-                image[i][k]=!(image[i][k]);
+                    image[i][k]^=1;
+                image[i][j]^=1;
             }
         return image;
     }

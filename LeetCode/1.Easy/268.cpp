@@ -1,6 +1,13 @@
 #include<iostream>
 #include<vector>
 using namespace std;
+
+/*
+Approach: Gauss's Summation / Arithmetic Series Sum
+TC: O(n)
+SC: O(1)
+*/
+
 class Solution {
 public:
     int missingNumber(vector<int>& nums) {

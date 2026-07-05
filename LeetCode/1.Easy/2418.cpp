@@ -1,19 +1,25 @@
 #include<iostream>
 #include<string>
 #include<vector>
+#include<map>
 using namespace std;
+
+/*
+Approach: Hashing / Reverse Mapping
+TC: O(n log n)
+SC: O(n)
+*/
+
 class Solution {
 public:
-    vector<string> sortPeople(vector<string>& names,vector<int>& heights) {
-        for(int i=0,maxIndex;i<heights.size();i++) {
-            maxIndex=i;
-            for(int j=i+1;j<heights.size();j++)
-                if(heights[maxIndex]<heights[j]) maxIndex=j;
-            if(i!=maxIndex) {
-                swap(heights[i],heights[maxIndex]);
-                swap(names[i],names[maxIndex]);
-            }
-        }
+    vector<string> sortPeople(vector<string>& names, vector<int>& heights) {
+        map<int,string> m;
+        for(int i=0;i<names.size();i++)
+            m[heights[i]]=names[i];
+        // Sort in descending order
+        int i=0;
+        for(auto it=m.rbegin();it!=m.rend();it++) 
+            names[i++] = it->second;
         return names;
     }
 };

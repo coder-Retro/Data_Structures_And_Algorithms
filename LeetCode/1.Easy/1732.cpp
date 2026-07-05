@@ -1,17 +1,23 @@
 #include<iostream>
 #include<vector>
 using namespace std;
+
+/*
+Approach: Linear Pass / Max Tracking
+TC: O(n)
+SC: O(1)
+*/
+
 class Solution {
 public:
     int largestAltitude(vector<int>& gain) {
-        int current_altitude=0;
-        int maximum_altitude=0;
-        for(int i=0;i<gain.size();i++) {
-            current_altitude+=gain[i];
-            if(current_altitude>maximum_altitude)
-                maximum_altitude=current_altitude;
+        int curr_alt=0;
+        int max_alt=0;
+        for(int i:gain) {
+            curr_alt+=i;
+            max_alt=max(max_alt,curr_alt);
         }
-        return maximum_altitude;
+        return max_alt;
     }
 };
 int main() {

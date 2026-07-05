@@ -2,6 +2,13 @@
 #include<vector>
 #include<string>
 using namespace std;
+
+/*
+Approach: Linear Matching
+TC: O(n)
+SC: O(1)
+*/
+
 class Solution {
 public:
     int numOfStrings(vector<string>& patterns,string word) {

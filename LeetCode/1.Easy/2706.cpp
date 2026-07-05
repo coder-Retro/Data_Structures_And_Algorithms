@@ -1,27 +1,29 @@
 #include<iostream>
 #include<vector>
-#include<set>
+#include<climits>
 using namespace std;
-class Solution
-{
+
+/*
+Approach: Linear Pass / Min Tracking
+TC: O(n)
+SC: O(1)
+*/
+
+class Solution {
 public:
     int buyChoco(vector<int>& prices, int money) {
-        if(prices.size()<2) return money;
-        int diff=0;
-        multiset<int> ms;
-        multiset<int>::iterator choc;
-        for(int i:prices)
-            ms.insert(i);
-        choc=next(ms.begin(),0);
-        diff+= *choc;
-        choc=next(ms.begin(),1);
-        diff+= *choc;
-        if(money-diff>=0) return money-diff;
-        return money;
+        int m1=INT_MAX,m2=INT_MAX;
+        for(int i:prices) {
+            if(i<m1) {
+                m2=m1;
+                m1=i;
+            } else if(i<m2) m2=i;
+        }
+        int diff=money-(m1+m2);
+        return (diff>=0)?diff:money;
     }
 };
-int main()
-{
+int main() {
     Solution s;
     vector<int> prices={3,2,5,7,3,2};
     int money=10;

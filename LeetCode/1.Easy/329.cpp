@@ -1,7 +1,13 @@
 #include<iostream>
 #include<string>
-#include<stack>
 using namespace std;
+
+/*
+Approach: Two Pointer
+TC: O(n)
+SC: O(1)
+*/
+
 class Solution {
 public:
     bool isSubsequence(string s,string t) {

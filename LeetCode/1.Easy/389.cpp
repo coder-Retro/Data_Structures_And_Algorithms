@@ -1,6 +1,13 @@
 #include<iostream>
 #include<string>
 using namespace std;
+
+/*
+Approach: Bit Manipulation
+TC: O(m+n), m and n are lengths of strings
+SC: O(1)
+*/
+
 class Solution {
 public:
     char findTheDifference(string s,string t) {

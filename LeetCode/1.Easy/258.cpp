@@ -1,22 +1,22 @@
 #include<iostream>
 using namespace std;
+
+/*
+Approach: Congruence Formula
+TC: O(1)
+SC: O(1)
+*/
+
 class Solution {
 public:
     int addDigits(int num) {
-        if(num<10) return num;
-        int sum=0;
-        while(num)
-        {
-            sum+=(num%10);
-            num/=10;
-        }
-        return addDigits(sum);
+        if(!num) return 0;
+        return 1+(num-1)%9;
     }
 };
-int main()
-{
+int main() {
     Solution s;
-    int  num=38;
+    int  num=10;
     cout<<s.addDigits(num);
     return 0;
 }

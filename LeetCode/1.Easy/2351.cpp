@@ -1,6 +1,13 @@
 #include<iostream>
 #include<string>
 using namespace std;
+
+/*
+Approach: Hashing
+TC: O(b)
+SC: O(1)
+*/
+
 class Solution {
 public:
     char repeatedCharacter(string s) {

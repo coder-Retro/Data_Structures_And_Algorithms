@@ -1,18 +1,20 @@
 #include<iostream>
 #include<vector>
 using namespace std;
+
+/*
+Approach: Two Pointer
+TC: O(n)
+SC: O(1)
+*/
+
 class Solution {
 public:
     void moveZeroes(vector<int>& nums) {
-        for(int i=0,j=i+1;j<nums.size();j++) {
-            if(!nums[i] && nums[j]) {
-                swap(nums[i],nums[j]);
-                i++;
-                j=i;
-            } else if(nums[i]) {
-                i++;
+        for(int l=0,r=0;r<nums.size();r++)
+            if(nums[r]) {
+                swap(nums[l++],nums[r]);
             }
-        }
     }
 };
 int main() {

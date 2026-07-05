@@ -6,6 +6,13 @@ struct TreeNode {
     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
 };
+
+/*
+Approach: Recursion / DFS / Digital Logic
+TC: O(n)
+SC: O(h), h = height of tree
+*/
+
 class Solution {
 public:
     bool evaluateTree(TreeNode* root) {

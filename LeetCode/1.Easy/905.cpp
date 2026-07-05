@@ -1,15 +1,20 @@
 #include<iostream>
 #include<vector>
 using namespace std;
+
+/*
+Approach: Two Pointer
+TC: O(n)
+SC: O(1)
+*/
+
 class Solution {
 public:
     vector<int> sortArrayByParity(vector<int>& nums) {
-        for(int i=0,evenIndex;i<nums.size();i++) {
-            evenIndex=i;
-            for(int j=i+1;j<nums.size();j++)
-                if(nums[evenIndex]%2 && !(nums[j]%2)) evenIndex=j;
-            if(i!=evenIndex) swap(nums[i],nums[evenIndex]);
-        }
+        int i=0;
+        for (int j=0;j<nums.size();j++)
+            if (!(nums[j]%2))
+                swap(nums[i++], nums[j]);
         return nums;
     }
 };

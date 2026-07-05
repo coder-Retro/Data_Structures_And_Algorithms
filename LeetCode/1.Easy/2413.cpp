@@ -1,9 +1,16 @@
 #include<iostream>
 using namespace std;
+
+/*
+Approach: Bit Manipulation
+TC: O(1)
+SC: O(1)
+*/
+
 class Solution {
 public:
     int smallestEvenMultiple(int n) {
-        return (n%2)?n*2:n;
+        return (n&1)?n<<1:n;
     }
 };
 int main() {

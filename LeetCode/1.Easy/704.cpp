@@ -1,9 +1,15 @@
 #include<iostream>
 #include<vector>
 using namespace std;
+
+/*
+Approach: Recursive Binary Search
+TC: O(log n)
+SC: O(log n)
+*/
+
 class Solution {
-    int BinSearch(vector<int>& nums,int s,int e,int t)
-    {
+    int BinSearch(vector<int>& nums,int s,int e,int t) {
         if(s>e) return -1;
         int mid=s+(e-s)/2;
         if(nums[mid]==t)     return mid;
@@ -15,8 +21,7 @@ public:
         return BinSearch(nums,0,nums.size()-1,target);
     }
 };
-int main()
-{
+int main() {
     Solution s;
     vector<int> vec={1,2,3,4,5,6,7,8,9,10};
     int target=0;

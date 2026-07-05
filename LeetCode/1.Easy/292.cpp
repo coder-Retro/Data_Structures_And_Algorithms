@@ -1,5 +1,12 @@
 #include<iostream>
 using namespace std;
+
+/*
+Approach: Constant Arithmetic / Game Theory
+TC: O(1)
+SC: O(1)
+*/
+
 class Solution {
 public:
     bool canWinNim(int n) {
