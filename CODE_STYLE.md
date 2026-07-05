@@ -1,3 +1,6 @@
+<img src="https://capsule-render.vercel.app/api?type=venom&height=200&color=gradient&text=Code%20Style&fontSize=60&fontColor=FFFFFF&animation=fadeIn&fontAlignY=35&desc=Documentation%20%7C%20Indentation%20%7C%20Formatting&descSize=35&descColor=FFFFFF&descAlignY=65" width="100%"/>
+
+
 # 🎨 Code Style Guide
 
 > This document records the conventions already followed across this repository, so they stay consistent as it grows and don't rely on memory alone.
