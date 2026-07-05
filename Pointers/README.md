@@ -1,3 +1,6 @@
+<img src="https://capsule-render.vercel.app/api?type=venom&height=200&color=gradient&text=Pointers&fontSize=60&fontColor=FFFFFF&animation=fadeIn&fontAlignY=35&desc=Memory%20%7C%20Stack%20%7C%20Heap&descSize=30&descColor=FFFFFF&descAlignY=65" width="100%"/>
+
+
 # 👉 Pointers
 
 Pointers are one of the most fundamental and powerful concepts in C++. They provide direct access to memory, enable dynamic memory management, and form the backbone of many advanced data structures such as linked lists, trees, graphs, and hash tables.
