@@ -1,3 +1,6 @@
+<img src="https://capsule-render.vercel.app/api?type=venom&height=200&color=gradient&text=LeetCode&fontSize=60&fontColor=FFFFFF&animation=fadeIn&fontAlignY=35&desc=Easy%20%7C%20Medium%20%7C%20Hard&descSize=30&descColor=FFFFFF&descAlignY=65" width="100%"/>
+
+
 # 🧠 LeetCode
 
 > **"Patterns get you to the whiteboard. Practice gets you through the interview."**
