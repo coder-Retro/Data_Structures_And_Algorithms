@@ -1,4 +1,4 @@
-<img src="https://capsule-render.vercel.app/api?type=venom&height=200&color=gradient&text=DSA&fontSize=80&fontColor=FFFFFF&animation=fadeIn&fontAlignY=35&desc=Data%20Structures%20and%20Algorithms&descSize=30&descColor=FFFFFF&descAlignY=60" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=venom&height=200&color=gradient&text=DSA&fontSize=80&fontColor=FFFFFF&animation=fadeIn&fontAlignY=35&desc=Data%20Structures%20and%20Algorithms&descSize=35&descColor=FFFFFF&descAlignY=65" width="100%"/>
 
 
 # 📘 Data Structures & Algorithms
