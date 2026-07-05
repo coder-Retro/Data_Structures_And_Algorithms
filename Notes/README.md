@@ -1,3 +1,6 @@
+<img src="https://capsule-render.vercel.app/api?type=venom&height=200&color=gradient&text=Notes&fontSize=60&fontColor=FFFFFF&animation=fadeIn&fontAlignY=35&desc=What%20%7C%20Why%20%7C%20How&descSize=30&descColor=FFFFFF&descAlignY=65" width="100%"/>
+
+
 # 📝 Notes
 
 > **"Code shows you what works. Notes remind you why."**
