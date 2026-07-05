@@ -1,3 +1,5 @@
+<img src="https://capsule-render.vercel.app/api?type=venom&height=200&color=gradient&text=Sort&fontSize=70&fontColor=FFFFFF&animation=fadeIn&fontAlignY=35&desc=Quadratic%20Time%20%7C%20Logarithmic%20Time&descSize=35&descColor=FFFFFF&descAlignY=65" width="100%"/>
+
 # 🔄 Sorting Algorithms
 
 > **"Sorting is the process of arranging data in a specific order to improve efficiency and simplify processing."**
