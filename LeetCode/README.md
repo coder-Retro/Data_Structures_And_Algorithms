@@ -54,8 +54,8 @@ public:
 | Difficulty | Problems | Use Case + Approach + TC/SC |
 | ---------- | :------: | :--------------------------: |
 | 🟢 Easy    |    78    | ✅ Complete                   |
-| 🟡 Medium  |    37    | 🔜 In Progress                |
-| 🔴 Hard    |    4     | 🔜 In Progress                |
+| 🟡 Medium  |    37    | ✅ Complete                   |
+| 🔴 Hard    |    4     | ✅ Complete                   |
 
 The goal is 100% documentation coverage across all three tiers — not just working solutions, but solutions that explain *why* they work and *what they cost*.
 
