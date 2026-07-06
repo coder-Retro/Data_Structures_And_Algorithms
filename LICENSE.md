@@ -1,3 +1,5 @@
+![License](https://img.shields.io/badge/License-MIT-green.svg)
+
 # MIT License
 
 Copyright (c) 2026 M. Hasnain Qadri
