@@ -15,7 +15,7 @@ than maxSum.
 */
 
 /*
-Approach: Kadane's Algo / Linear Pass
+Approach: Max Positive Tracking
 TC: O(n)
 SC: O(1)
 */

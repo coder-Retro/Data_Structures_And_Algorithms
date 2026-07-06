@@ -12,7 +12,7 @@ value is basically their GCD.
 */
 
 /*
-Approach: Euclidean Algo / Successive Subtraction
+Approach: Successive Reduction
 TC: O(n)
 SC: O(1)
 

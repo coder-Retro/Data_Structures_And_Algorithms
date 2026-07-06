@@ -14,7 +14,7 @@ one bits in the number.
 */
 
 /*
-Approach: Brian Kernighan’s Algo / Bit Manipulation
+Approach: Bit Manipulation
 TC: O(k), k = number of set bits
 SC: O(1)
 */

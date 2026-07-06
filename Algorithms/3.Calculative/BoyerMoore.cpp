@@ -15,7 +15,7 @@ Algo. It works by finding the largest Frequency.
 */
 
 /*
-Approach: Boyer Moore's Algo / Frequency Count
+Approach: Greedy
 TC: O(n)
 SC: O(1)
 */
