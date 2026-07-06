@@ -15,7 +15,7 @@ than maxSum.
 */
 
 /*
-Approach: Max Positive Tracking
+Approach: Dynamic Programming
 TC: O(n)
 SC: O(1)
 */

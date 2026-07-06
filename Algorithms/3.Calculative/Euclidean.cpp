@@ -12,11 +12,11 @@ value is basically their GCD.
 */
 
 /*
-Approach: Successive Reduction
+Approach: Decrease And Conquer / Recursive Subtract
 TC: O(n)
 SC: O(1)
 
-Approach: Euclidean Algo / Recursive Modulo
+Approach: Decrease And Conquer / Recursive Modulo
 TC: O(log(min(a,b))), a and b are two numbers
 SC: O(d), d = depth of recursion
 */
