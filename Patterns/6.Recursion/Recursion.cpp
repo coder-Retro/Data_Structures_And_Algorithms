@@ -2,7 +2,7 @@
 using namespace std;
 
 /*
-
+Recursion:
 Recursion is the phenomenon where a function calls itself.
 The calls keep on happening until a certain case known as
 "Base Case" is reached. From this point the function goes
@@ -22,7 +22,6 @@ methods in Binary Trees, these are:
 1. preOrder
 2. inOrder
 3. postOrder
-
 */
 
 // Recursive Function

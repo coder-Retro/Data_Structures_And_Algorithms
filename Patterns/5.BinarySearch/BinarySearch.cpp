@@ -3,7 +3,6 @@
 using namespace std;
 
 /*
-
 Binary Search:
 This pattern is only applicable where data is sorted.
 Data can be rotated but overall it should still be in
@@ -26,7 +25,6 @@ value range. If it does, search continues in that half;
 otherwise, search continues in the other half. This handles
 rotation correctly, since a plain "target vs mid" comparison
 only works on an array that isn't rotated.
-
 */
 
 // Binary Search Function

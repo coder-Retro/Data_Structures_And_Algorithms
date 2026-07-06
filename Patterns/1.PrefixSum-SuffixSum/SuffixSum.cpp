@@ -3,7 +3,6 @@
 using namespace std;
 
 /*
-
 Suffix Sum:
 It's the opposite of prefix sum pattern which is used
 when we need the sum of all elements of an array from
@@ -13,7 +12,6 @@ it as many times as we need. This saves us the time to
 calculate these sum over and over again. The overall
 Time complexity of this algo is O(n) and the Overall
 Space complexity is O(n).
-
 */
 
 // Suffix Sum Function

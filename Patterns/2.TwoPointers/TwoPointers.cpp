@@ -3,7 +3,7 @@
 using namespace std;
 
 /*
-
+Two Pointers:
 Two Pointers is a classic technique used in DSA due to its
 capability to solve several complex problems using the O(n)
 time complexity. It works with array, vectors, strings and
@@ -28,7 +28,6 @@ The third case follows a bit of a complex movement which
 requires the two pointer to start from the heads of each
 list and alternate between each other untill they become
 equal (Land on the same Node, which is the intersection)
-
 */
 
 // TwoPointers Function

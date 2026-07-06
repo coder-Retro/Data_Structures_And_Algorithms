@@ -3,7 +3,6 @@
 using namespace std;
 
 /*
-
 Sliding Window:
 This is a DSA pattern that is used when dealing with
 subarrays of a certain size inside a larger array to
@@ -14,7 +13,6 @@ the right bound of the array. The Time complexity of
 this algo is O(n) and the Space complexity of is O(1)
 because it only declares two pointers regardless of 
 the input size.
-
 */
 
 // Sliding Window Function

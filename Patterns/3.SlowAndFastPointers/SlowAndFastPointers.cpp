@@ -2,7 +2,7 @@
 using namespace std;
 
 /*
-
+Slow And Fast Pointers:
 Slow and Fast Pointer is a DSA technique that is primarily
 associated with Linked List problems. In this technique we
 initialized two ListNode pointers with head of the Linked
@@ -20,7 +20,6 @@ for problems like:
 1. Palindrom Linked List
 2. Linked List Cycle Detection
 3. Middle of Linked List
-
 */
 
 // ListNode Class

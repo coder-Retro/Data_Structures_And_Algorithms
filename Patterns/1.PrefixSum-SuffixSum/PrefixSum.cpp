@@ -3,7 +3,6 @@
 using namespace std;
 
 /*
-
 Prefix Sum:
 It is one of the most basic DSA pattern which is used
 when we need the sum of all elements of an array upto
@@ -12,7 +11,6 @@ the sum array once and then just use it as many times
 as we need. This saves us the time to calculate these
 sum over and over again. Time complexity of this algo
 is O(n) and Space complexity is O(n).
-
 */
 
 // Prefix Sum Function
