@@ -57,7 +57,7 @@ public:
 | 🟡 Medium  |    37    | ✅ Complete                   |
 | 🔴 Hard    |    4     | ✅ Complete                   |
 
-The goal is 100% documentation coverage across all three tiers — not just working solutions, but solutions that explain *why* they work and *what they cost*.
+The goal is 100% documentation coverage across all three tiers — not just working solutions, but solutions that explain  *what they cost*.
 
 ---
 
