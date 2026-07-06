@@ -1,4 +1,4 @@
-# 🔁 Bit Manipulation Pattern
+# 💻 Bit Manipulation Pattern
 
 > **"Techniques to manipulate data at the individual bit level for maximum performance and memory efficiency."**
 
