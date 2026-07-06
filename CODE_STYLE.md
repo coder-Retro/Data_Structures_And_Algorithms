@@ -77,7 +77,7 @@ int main() {
 
 ## 💬 Comment Conventions
 
-- **`Use Case`** — always present, explains *why* this technique/problem matters, not just what it does.
+- **`Use Case`** — only present in Algorithms directory, explains *why* this technique matters, not just what it does.
 - **`Approach`** — names the technique explicitly (e.g. `Two Pointer`, `Boyer Moore's Algo / Frequency Count`), not just "brute force" or "optimized."
 - **`TC` / `SC`** — always both present, always in Big-O notation, with the variable defined inline when it isn't `n` by default:
   ```
