@@ -15,8 +15,8 @@ one bits in the number.
 
 /*
 Approach: Brian Kernighan’s Algo / Bit Manipulation
-TC: O(1)
-SC: O(k), k = number of set bits
+TC: O(k), k = number of set bits
+SC: O(1)
 */
 
 class BrianKernighan {
