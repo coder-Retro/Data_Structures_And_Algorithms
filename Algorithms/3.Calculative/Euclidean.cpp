@@ -3,7 +3,7 @@ using namespace std;
 
 /*
 Use Case:
-Euclidean Algorith is used to find the GCD of
+Euclidean Algorithm is used to find the GCD of
 two numbers by either doing recursive modulo
 or successive subtraction. It works by subtracting
 the larger number from the smaller until both

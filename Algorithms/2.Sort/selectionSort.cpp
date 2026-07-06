@@ -1,6 +1,24 @@
 #include<iostream>
 #include<vector>
 using namespace std;
+
+/*
+Use Case:
+Selection sort algorithm is used to sort the dataset
+in quadratic time, it is one of the unoptimized,
+slow and inefficient sorting algorithms. It works
+finding the ith minimum element in each of inner
+loop iteration and swaps if with the ith index from
+start of the dataset. If only swaps if ith smallest
+element isn't already on the ith index from the start.
+*/
+
+/*
+Approach: Brute Force
+TC: O(n²)
+SC: O(1)
+*/
+
 class Solution {
 public:
     void selectionSort(vector<int>& nums) {
