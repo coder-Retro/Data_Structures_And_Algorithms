@@ -74,11 +74,13 @@ Each pattern builds upon the intuition developed in the previous one.
 
 ```text
 Patterns/
-├── Recursion/
-├── TwoPointers/
-├── SlidingWindow/
-├── SlowAndFastPointers/
-├── DynamicProgramming/
+├── 1.PrefixSum-SuffixSum
+├── 2.TwoPointers/
+├── 3.SlowAndFastPointers/
+├── 4.SlidingWindow/
+├── 5.BinarySearch/
+├── 6.Recursion/
+├── 7.BitManipulation/
 └── README.md
 ```
 
