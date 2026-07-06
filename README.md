@@ -3,7 +3,7 @@
 
 # 📘 Data Structures & Algorithms
 
-A comprehensive collection of **Data Structures**, **Algorithms**, **Problem Solving Patterns**, **STL tutorials**, and **LeetCode practice solutions** implemented primarily in C++.
+A comprehensive collection of **Data Structures**, **Algorithms**, **Problem Solving Patterns**, **STL tutorials**, and **LeetCode practice solutions** implemented in C++.
 
 This repository is designed as a personal learning journey and a structured reference for anyone preparing for coding interviews, competitive programming, or strengthening their understanding of fundamental computer science concepts.
 
