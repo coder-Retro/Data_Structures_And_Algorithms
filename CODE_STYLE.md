@@ -59,14 +59,14 @@ TC: O(...)
 SC: O(...)
 */
 
-class ClassName {
+class Solution {
 public:
     // implementation
 };
 
 // Main Function
 int main() {
-    ClassName obj;
+    Solution obj;
     // sample input + call
     cout << obj.method(...);
     return 0;
