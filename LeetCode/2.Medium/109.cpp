@@ -16,7 +16,7 @@ struct TreeNode {
 
 /*
 Approach: Recursion / Divide And Conquer / Slow & Fast Pointer
-TC: O(nlog n)
+TC: O(n log n)
 SC: O(log n)
 */
 

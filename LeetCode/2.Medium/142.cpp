@@ -5,6 +5,12 @@ struct ListNode {
     ListNode* next;
     ListNode(int x) : val(x), next(NULL) {}
 };
+
+/*
+Approach: Slow & Fast Pointers / Floyd's Cycle Detection
+TC: O(n)
+SC: O(1)
+*/
 class Solution {
 public:
     ListNode* detectCycle(ListNode* head) {

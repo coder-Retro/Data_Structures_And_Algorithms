@@ -1,5 +1,4 @@
-struct TreeNode
-{
+struct TreeNode {
     int val;
     TreeNode *left;
     TreeNode *right;
@@ -7,9 +6,15 @@ struct TreeNode
     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
 };
+
+/*
+Approach: Recursion / DFS
+TC: O(n)
+SC: O(h), h = height of tree
+*/
+
 class Solution {
-    void inOrder(TreeNode* root,vector<int>& order)
-    {
+    void inOrder(TreeNode* root,vector<int>& order) {
         if(!root) return;
         inOrder(root->left,order);
         order.push_back(root->val);

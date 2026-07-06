@@ -1,12 +1,17 @@
 #include<iostream>
 using namespace std;
-class Solution
-{
+
+/*
+Approach: Arithmetic Reversal
+TC: O(d), d = digits in num
+SC: O(1)
+*/
+
+class Solution {
 public:
     int reverse(int x) {
         long rev=0;
-        while(x!=0)
-        {
+        while(x!=0) {
             rev=rev*10+x%10;
             x/=10;
         }
@@ -14,8 +19,7 @@ public:
         return rev;
     }
 };
-int main()
-{
+int main() {
     Solution s;
     int a[4]={123,-123,120,1534236469};
     for(int i=0;i<sizeof(a)/sizeof(a[0]);i++)

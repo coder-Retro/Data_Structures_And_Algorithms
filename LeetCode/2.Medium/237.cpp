@@ -5,15 +5,6 @@ struct ListNode {
     ListNode *next;
     ListNode(int x) : val(x), next(NULL) {}
 };
-class Solution {
-public:
-    void deleteNode(ListNode* node) {
-        ListNode* target=node->next;
-        node->val=target->val;
-        node->next=target->next;
-        delete target;
-    }
-};
 ListNode* makeList(initializer_list<int> lis) {
     ListNode dummy(0);
     ListNode* temp=&dummy;
@@ -23,6 +14,22 @@ ListNode* makeList(initializer_list<int> lis) {
     }
     return dummy.next;
 }
+
+/*
+Approach: Copy Elimination
+TC: O(1)
+SC: O(1)
+*/
+
+class Solution {
+public:
+    void deleteNode(ListNode* node) {
+        ListNode* target=node->next;
+        node->val=target->val;
+        node->next=target->next;
+        delete target;
+    }
+};
 int main() {
     Solution s;
     ListNode* lis=makeList({4,5,1,9});

@@ -1,4 +1,3 @@
-
 class Node {
 public:
     int val;
@@ -9,6 +8,13 @@ public:
     Node(int _val) : val(_val), left(NULL), right(NULL), next(NULL) {}
     Node(int _val, Node* _left, Node* _right, Node* _next) : val(_val), left(_left), right(_right), next(_next) {}
 };
+
+/*
+Approach: Recursion / DFS
+TC: O(n)
+SC: O(h), h = height of tree
+*/
+
 class Solution {
     void traverseAndPopulate(Node* root) {
         if(!root || !root->left) return;

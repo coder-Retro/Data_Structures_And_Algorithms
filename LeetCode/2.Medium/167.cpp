@@ -1,11 +1,17 @@
 #include<iostream>
 #include<vector>
 using namespace std;
+
+/*
+Approach: Two Pointer
+TC: O(n)
+SC: O(1)
+*/
+
 class Solution {
 public:
     vector<int> twoSum(vector<int>& nums, int target) {
-        for(int i=0,j=nums.size()-1;i<j;)
-        {
+        for(int i=0,j=nums.size()-1;i<j;) {
             if(nums[i]+nums[j]<target)
                 i++;
             else if(nums[i]+nums[j]>target)

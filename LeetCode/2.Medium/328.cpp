@@ -7,6 +7,13 @@ struct ListNode {
     ListNode(int x) : val(x), next(nullptr) {}
     ListNode(int x, ListNode *next) : val(x), next(next) {}
 };
+
+/*
+Approach: Two Pointer / Alternate Linking
+TC: O(n)
+SC: O(1)
+*/
+
 class Solution {
 public:
     ListNode* oddEvenList(ListNode* head) {

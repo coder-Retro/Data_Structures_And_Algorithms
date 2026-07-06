@@ -2,6 +2,13 @@
 #include<vector>
 #include<algorithm>
 using namespace std;
+
+/*
+Approach: Sorting / Iterative Accumulation
+TC: O(n log n)
+SC: O(1)
+*/
+
 class Solution {
 public:
     long long maxSum(vector<int>& nums,int k,int mul) {

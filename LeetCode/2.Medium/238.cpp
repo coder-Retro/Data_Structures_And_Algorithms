@@ -1,29 +1,32 @@
 #include<iostream>
 #include<vector>
 using namespace std;
-class Solution
-{
+
+/*
+Approach: Prefix Product / Suffix Product
+TC: O(n)
+SC: O(n)
+*/
+
+class Solution {
 public:
     vector<int> productExceptSelf(vector<int>& nums) {
         vector<int> ans(nums.size());
         int product=1;
         int i;
-        for(i=0;i<nums.size();i++)
-        {
+        for(i=0;i<nums.size();i++) {
             ans[i]=product;
             product*=nums[i];
         }
         product=1;
-        for(i=nums.size()-1;i>=0;i--)
-        {
+        for(i=nums.size()-1;i>=0;i--) {
             ans[i]*=product;
             product*=nums[i];
         }
         return ans;
     }
 };
-int main()
-{
+int main() {
     Solution s;
     vector<int> n1={1,2,3,4},n2={-1,1,0,-3,3};
     vector<int> a1,a2;

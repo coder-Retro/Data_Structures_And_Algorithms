@@ -2,6 +2,13 @@
 #include<vector>
 #include<algorithm>
 using namespace std;
+
+/*
+Approach: Sorting / Linear Reduction
+TC: O(n log n)
+SC: O(1)
+*/
+
 class Solution {
 public:
     int maximumElementAfterDecrementingAndRearranging(vector<int>& arr) {

@@ -7,42 +7,40 @@ struct ListNode {
     ListNode(int x) : val(x), next(nullptr) {}
     ListNode(int x, ListNode *next) : val(x), next(next) {}
 };
-ListNode* makeList(initializer_list<int> lis)
-{
+ListNode* makeList(initializer_list<int> lis) {
     ListNode l;
     ListNode* temp=&l;
-    for(int i:lis)
-    {
+    for(int i:lis) {
         temp->next=new ListNode(i);
         temp=temp->next;
     }
     return l.next;
 }
-void printList(ListNode* l)
-{
-    while(l)
-    {
+void printList(ListNode* l) {
+    while(l) {
         cout<<l->val<<" ";
         l=l->next;
     }
 }
-class Solution
-{
+
+/*
+Approach: Linking
+TC: O(m+n), m and n are sizes of lists
+SC: O(1)
+*/
+
+class Solution {
 public:
     ListNode* mergeTwoLists(ListNode* list1, ListNode* list2) {
         if(!list1) return list2;
         if(!list2) return list1;
         ListNode list3;
         ListNode* temp=&list3;
-        while(list1&&list2)
-        {
-            if(list1->val<=list2->val)
-            {
+        while(list1&&list2) {
+            if(list1->val<=list2->val) {
                 temp->next=list1;
                 list1=list1->next;
-            }
-            else
-            {
+            } else {
                 temp->next=list2;
                 list2=list2->next;
             }
@@ -52,8 +50,7 @@ public:
         return list3.next;
     }
 };
-int main()
-{
+int main() {
     Solution s;
     ListNode* l1=makeList({1,2,4});
     ListNode* l2=makeList({1,3,4});

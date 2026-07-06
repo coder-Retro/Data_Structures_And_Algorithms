@@ -1,6 +1,13 @@
 #include<iostream>
 #include<vector>
 using namespace std;
+
+/*
+Approach: Binary Search / Expansion
+TC: O(n)
+SC: O(1)
+*/
+
 class Solution {
 public:
     vector<int> searchRange(vector<int>& nums,int target) {

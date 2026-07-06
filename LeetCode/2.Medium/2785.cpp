@@ -2,6 +2,13 @@
 #include<string>
 #include<algorithm>
 using namespace std;
+
+/*
+Approach: Sorting / Hashing
+TC: O(n log n)
+SC: O(n)
+*/
+
 class Solution {
 public:
     string sortVowels(string s) {

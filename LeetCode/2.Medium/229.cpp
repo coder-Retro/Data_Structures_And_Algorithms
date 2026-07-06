@@ -2,8 +2,14 @@
 #include<vector>
 #include<unordered_map>
 using namespace std;
-class Solution
-{
+
+/*
+Approach: Hasihing
+TC: O(n)
+SC: O(n)
+*/
+
+class Solution {
 public:
     vector<int> majorityElement(vector<int>& nums){
         vector<int> v;
@@ -14,8 +20,7 @@ public:
         return v;
     }
 };
-int main()
-{
+int main() {
     Solution s;
     vector<int> nums={3,2,3};
     vector<int> ans=s.majorityElement(nums);

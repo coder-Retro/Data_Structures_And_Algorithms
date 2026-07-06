@@ -2,6 +2,13 @@
 #include<vector>
 #include<utility>
 using namespace std;
+
+/*
+Approach: In-Place Tripple Reversal
+TC: O(n)
+SC: O(1)
+*/
+
 class Solution {
 public:
     void rotate(vector<int>& nums,int k) {

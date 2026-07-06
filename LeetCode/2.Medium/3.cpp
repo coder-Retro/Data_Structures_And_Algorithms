@@ -1,6 +1,13 @@
 #include<iostream>
 #include<string>
 using namespace std;
+
+/*
+Approach: Linear Pass / Max Tracking
+TC: O(n²)
+SC: O(m), m = length of longest substring
+*/
+
 class Solution {
 public:
     int LengthOfLongestSubstring(string s) {

@@ -2,6 +2,13 @@
 #include<vector>
 #include<utility>
 using namespace std;
+
+/*
+Approach: In-Place Transpose / Two Pointers
+TC: O(n²)
+SC: O(1)
+*/
+
 class Solution {
 public:
     void rotate(vector<vector<int>>& matrix) {
