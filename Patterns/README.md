@@ -159,6 +159,19 @@ Common applications include:
 
 ---
 
+## 💻 Bit Manipulation
+
+Manipulating a data at binary level (bits) and performing CPU friendly operations.
+
+Common applications include:
+
+* Parity Check
+* Multiplication By Powers of 2
+* Division By Powers of 2
+* Bit Reversal
+
+---
+
 # 🔍 Pattern Recognition Cheat Sheet
 
 | If the problem mentions...                | Consider...          |
