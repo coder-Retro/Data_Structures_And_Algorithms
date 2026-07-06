@@ -45,19 +45,25 @@ Recognizing the pattern is often the hardest—and most valuable—part of solvi
 Follow the patterns in this recommended order:
 
 ```text
-Recursion
+Prefix/Suffix Sums
      │
      ▼
 Two Pointers
      │
      ▼
-Sliding Window
-     │
-     ▼
 Slow & Fast Pointers
      │
      ▼
-Dynamic Programming
+Sliding Window
+     │
+     ▼
+Binary Search
+     │
+     ▼
+Recursion
+     │
+     ▼
+Bit Manipulation
 ```
 
 Each pattern builds upon the intuition developed in the previous one.
