@@ -9,7 +9,8 @@
 
 ## 📁 File Structure
 
-Every solution/algorithm file follows this order, top to bottom:
+### Algorithms
+Every code file in Algorithms directory follows this template:
 
 ```cpp
 #include<iostream>
@@ -42,6 +43,35 @@ int main() {
 ```
 
 If a file demonstrates more than one approach to the same problem (e.g. `Euclidean.cpp`), stack multiple `Approach/TC/SC` blocks back to back inside the same comment, one per technique.
+
+### LeetCode
+Every code file in LeetCode directory follows this template:
+
+```cpp
+#include<iostream>
+using namespace std;
+
+// Helper Function  (if any)
+
+/*
+Approach: Name of the technique used
+TC: O(...)
+SC: O(...)
+*/
+
+class ClassName {
+public:
+    // implementation
+};
+
+// Main Function
+int main() {
+    ClassName obj;
+    // sample input + call
+    cout << obj.method(...);
+    return 0;
+}
+```
 
 ---
 

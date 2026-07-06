@@ -20,7 +20,6 @@ public:
         return max;
     }
 };
-using namespace std;
 int main() {
     Solution s;
     vector<int> nums={3,-4,5,4,-1,7,-8};
