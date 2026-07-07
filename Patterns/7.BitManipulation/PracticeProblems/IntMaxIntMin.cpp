@@ -9,7 +9,6 @@ Your are supposed to make two functions which:
 2. Returns the minimum possible signed int.
 
 Constraints:
-
 1. Your are only allowed to use BitWise operators.
 2. Your are not allowed to use INT_MIN and INT_MAX.
 3. Both solutions should be O(1) in Time and Space.

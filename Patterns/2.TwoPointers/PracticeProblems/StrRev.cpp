@@ -9,7 +9,6 @@ function. The function will return void and
 take a string s passed by reference.
 
 Constraints:
-
 1. You must achieve this using two pointers.
 2. You are allowed to use only swap from built-in functions.
 */

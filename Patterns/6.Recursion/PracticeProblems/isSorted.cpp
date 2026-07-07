@@ -11,7 +11,7 @@ function should return true if the vector is
 sorted in increasing oreder or false if it's
 not sorted in increasing order.
 
-Constraits:
+Constraints:
 1. You are not allowed to use built-in loops.
 2. You function must achieve this using recursion.
 */
