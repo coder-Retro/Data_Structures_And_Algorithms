@@ -20,8 +20,7 @@ Constraits:
 class Recursion {
 public:
     bool isSorted(const vector<int>& num,int n) {
-        if(n==1) return true;
-        return num[n-1]>=num[n-2] && isSorted(num,n-1);
+        // Your Code Here
     }
 };
 

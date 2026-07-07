@@ -12,13 +12,18 @@ Constraints:
 
 1. Your are only allowed to use BitWise operators.
 2. Your are not allowed to use INT_MIN and INT_MAX.
+3. Both solutions should be O(1) in Time and Space.
 */
 
 // BitManipulation Class
 class BitManipulation {
 public:
-    int maxInt() { return ((unsigned int)~0)>>1; }
-    int minInt() { return ~maxInt();             }
+    int maxInt() {
+        // Your Code Here
+    }
+    int minInt() { 
+        // Your Code Here
+    }
 };
 
 // Main Function
