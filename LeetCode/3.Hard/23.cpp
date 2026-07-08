@@ -1,6 +1,6 @@
 #include<iostream>
+#include<queue>
 #include<vector>
-#include<set>
 using namespace std;
 struct ListNode {
     int val;
@@ -29,33 +29,33 @@ void print(ListNode* l) {
 }
 
 /*
-Approach: Hashing
-TC: O(n log n)
-SC: O(n)
+Approach: Min Heap
+TC: O(n log k), k = number of lists
+SC: O(k), k = number of lists
 */
 
 class Solution {
-    ListNode* makelist(multiset<int> s) {
-        ListNode dummy(0);
-        ListNode* l=&dummy;
-        for(int i:s) {
-            l->next=new ListNode(i);
-            l=l->next;
+    struct Compare {
+        bool operator()(ListNode* a,ListNode* b) {
+            return a->val > b->val;
         }
-        return dummy.next;
-    }
+    };
 public:
     ListNode* mergeKLists(vector<ListNode*>& lists) {
-        multiset<int> s;
-        ListNode* temp;
-        for(int i=0;i<lists.size();i++) {
-            temp=lists[i];
-            while(temp) {
-                s.insert(temp->val);
-                temp=temp->next;
-            }
+        priority_queue<ListNode*,vector<ListNode*>,Compare> minHeap;
+        for(ListNode* l:lists)
+            if(l) minHeap.push(l);
+        ListNode dummy;
+        ListNode* tail=&dummy;
+        while(!minHeap.empty()) {
+            tail->next=minHeap.top();
+            minHeap.pop();
+            if(tail->next->next)
+                minHeap.push(tail->next->next);
+            tail=tail->next;
         }
-        return makelist(s);
+        tail->next=nullptr;
+        return dummy.next;
     }
 };
 int main() {
