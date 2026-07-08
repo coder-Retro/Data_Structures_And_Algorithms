@@ -40,10 +40,11 @@ After completing this chapter, you should be able to:
 ```text
 Sort/
 ├── BubbleSort.cpp
-├── SelectionSort.cpp
-├── InsertionSort.cpp
 ├── ExchangeSort.cpp
+├── HeapSort.cpp
+├── InsertionSort.cpp
 ├── MergeSort.cpp
+├── SelectionSort.cpp
 └── README.md
 ```
 
