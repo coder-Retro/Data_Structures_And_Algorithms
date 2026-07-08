@@ -128,7 +128,7 @@ Concepts Covered:
 # 🧠 How to Choose a Sorting Algorithm
 
 ```text
-                     Need to Sort?
+                      Need to Sort?
                             │
                             ▼
                       Small Dataset?
