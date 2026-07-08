@@ -138,10 +138,10 @@ Concepts Covered:
                        ▼          ▼
                    Insertion  Need Stability?
                      Sort        │       │
-                                Yes     No
-                                 │        │
-                                 ▼        ▼
-                           Merge Sort  Heap Sort*
+                                Yes      No
+                                 │       │
+                                 ▼       ▼
+                           Merge Sort  Heap Sort
 ```
 
 > **Note:** In this repository, **Merge Sort** is the most efficient algorithm covered for large datasets.
