@@ -128,20 +128,20 @@ Concepts Covered:
 # 🧠 How to Choose a Sorting Algorithm
 
 ```text
-Need to Sort?
-       │
-       ▼
-Small Dataset?
-   │         │
- Yes        No
- │           │
- ▼           ▼
-Insertion   Need Stability?
-Sort           │       │
-               Yes     No
-               │        │
-               ▼        ▼
-          Merge Sort  Heap Sort*
+                     Need to Sort?
+                            │
+                            ▼
+                      Small Dataset?
+                       │          │
+                      Yes         No
+                       │          │
+                       ▼          ▼
+                   Insertion  Need Stability?
+                     Sort        │       │
+                                Yes     No
+                                 │        │
+                                 ▼        ▼
+                           Merge Sort  Heap Sort*
 ```
 
 > **Note:** In this repository, **Merge Sort** is the most efficient algorithm covered for large datasets.
