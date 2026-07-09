@@ -30,7 +30,8 @@ STLContainers/
 ├── Deque/
 ├── Stack/
 ├── Queue/
-└── PriorityQueue/
+├── PriorityQueue/
+└── README.md
 ```
 
 Each folder focuses on one container and contains runnable examples demonstrating its core functionality.
@@ -83,25 +84,6 @@ File:
 
 ---
 
-## 📌 Deque
-
-File:
-
-* `deque.cpp`
-
-### Topics Covered
-
-* Double-ended insertion
-* Double-ended deletion
-* Random access
-* Front and back operations
-
-### Best Used When
-
-* Efficient operations are needed at both the front and the back.
-
----
-
 ## 📌 Stack
 
 Files:
@@ -139,6 +121,25 @@ Files:
 ### Practice
 
 Includes an implementation that reinforces queue operations through a simple problem.
+
+---
+
+## 📌 Deque
+
+File:
+
+* `deque.cpp`
+
+### Topics Covered
+
+* Double-ended insertion
+* Double-ended deletion
+* Random access
+* Front and back operations
+
+### Best Used When
+
+* Efficient operations are needed at both the front and the back.
 
 ---
 
