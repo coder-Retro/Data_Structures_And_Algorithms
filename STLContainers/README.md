@@ -198,9 +198,9 @@ Study the folders in the following order:
 
 1. Vector
 2. List
-3. Deque
-4. Stack
-5. Queue
+3. Stack
+4. Queue
+5. Deque
 6. Priority Queue
 
 This sequence builds progressively from general-purpose containers to specialized data structures.
