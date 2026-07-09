@@ -23,7 +23,7 @@ SC: O(1)
 class Solution {
 public:
     int linearSearch(vector<int>& nums,int target) {
-        if(nums.size()==0) return -1;
+        if(nums.empty()) return -1;
         for(int i=0;i<nums.size();i++)
             if(nums[i]==target) return i;
         return -1;
