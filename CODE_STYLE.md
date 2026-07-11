@@ -68,7 +68,7 @@ public:
 int main() {
     Solution obj_Name;
     // sample input + call
-    cout << obj.method(...);
+    cout << obj_Name.method(...);
     return 0;
 }
 ```
