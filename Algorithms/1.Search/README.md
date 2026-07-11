@@ -81,15 +81,15 @@ Introduces one of the fastest searching algorithms.
 # 🧠 Choosing the Right Search Algorithm
 
 ```text
-                 Need to Search?
-                       │
-                       ▼
-          Is the data sorted?
-              │             │
-             Yes            No
+              Need to Search?
+                     │
+                     ▼
+             Is the data sorted?
+              │              │
+             Yes             No
               │              │
               ▼              ▼
-      Binary Search     Linear Search
+        Binary Search   Linear Search
 ```
 
 If your data isn't sorted and you only need to search once, **Linear Search** is usually the simplest solution.
