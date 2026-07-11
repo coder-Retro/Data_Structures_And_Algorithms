@@ -66,7 +66,7 @@ public:
 
 // Main Function
 int main() {
-    Solution obj;
+    Solution obj_Name;
     // sample input + call
     cout << obj.method(...);
     return 0;
