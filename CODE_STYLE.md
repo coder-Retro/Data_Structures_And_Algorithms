@@ -54,6 +54,7 @@ using namespace std;
 // Struct Definitions/Helper Functions (if any)
 
 /*
+MethodName: (if multiple)
 Approach: Name of the technique used
 TC: O(...)
 SC: O(...)
