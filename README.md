@@ -63,6 +63,7 @@ Examples include:
 * Sliding Window
 * Binary Search
 * Recursion
+* Bit Manipulation
 
 Understanding these patterns helps solve hundreds of interview questions efficiently.
 
@@ -117,11 +118,11 @@ For beginners, the recommended order is:
 
 1. Pointers
 2. STL Containers
-3. Basic Data Structures
-4. Algorithms
-5. Problem Solving Patterns
-6. LeetCode Practice
-7. Revision using Notes
+3. Study using Notes
+4. Basic Data Structures
+5. Algorithms
+6. Problem Solving Patterns
+7. LeetCode Practice
 
 ---
 
@@ -164,10 +165,7 @@ If you discover a bug or have a better implementation, feel free to open an issu
 # 📌 Future Improvements
 
 * Add visual diagrams
-* Include complexity tables
-* Add practice recommendations
 * Link related concepts
-* Include interview tips
 * Add benchmark comparisons where applicable
 
 ---
