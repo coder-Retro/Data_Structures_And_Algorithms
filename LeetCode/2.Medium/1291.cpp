@@ -20,9 +20,9 @@ public:
         for(int i=0,j=currMaxLen-1;j<ref.size();i++,j++) {
             int n=stoi(ref.substr(i,j-i+1));
             if(n>=low && n<=high) ans.push_back(n);
-            if(j==ref.size()-1 && j-i<h.size()) {
-                i=-1;
-                j=currMaxLen-1;
+            if(j==ref.size()-1 && j-i+1<h.size()) {
+                i=-1; // loop will do i++ and i becomes 0
+                j=currMaxLen-1; // loop will do j++ and j becomes currMaxLen
                 currMaxLen++;
             }
         }
