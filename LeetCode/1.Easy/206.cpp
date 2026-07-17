@@ -24,7 +24,7 @@ void printList(ListNode* l) {
 }
 
 /*
-Approach: Three Pointer / Linear Pass
+Approach: Three Pointers
 TC: O(n)
 SC: O(1)
 */
