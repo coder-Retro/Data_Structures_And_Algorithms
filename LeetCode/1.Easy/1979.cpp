@@ -5,7 +5,7 @@ using namespace std;
 
 /*
 Approach: Modulo Based Euclidean Algo
-TC: O(n log m), m = max(minNum,maxNum)
+TC: O(n + log m), m = min(minNum,maxNum)
 SC: O(1)
 */
 
