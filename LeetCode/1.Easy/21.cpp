@@ -24,7 +24,7 @@ void printList(ListNode* l) {
 }
 
 /*
-Approach: Linking
+Approach: Two Pointers
 TC: O(m+n), m and n are sizes of lists
 SC: O(1)
 */
@@ -32,22 +32,20 @@ SC: O(1)
 class Solution {
 public:
     ListNode* mergeTwoLists(ListNode* list1, ListNode* list2) {
-        if(!list1) return list2;
-        if(!list2) return list1;
-        ListNode list3;
-        ListNode* temp=&list3;
+        ListNode merged;
+        ListNode* tail=&merged;
         while(list1&&list2) {
             if(list1->val<=list2->val) {
-                temp->next=list1;
+                tail->next=list1;
                 list1=list1->next;
             } else {
-                temp->next=list2;
+                tail->next=list2;
                 list2=list2->next;
             }
-            temp=temp->next;
+            tail=tail->next;
         }
-        temp->next=list1?list1:list2;
-        return list3.next;
+        tail->next=list1?list1:list2;
+        return merged.next;
     }
 };
 int main() {
